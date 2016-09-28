@@ -1,4 +1,4 @@
-import NAME
+import grays_sports_almanac
 
 def setup():
     print "SETUP!"
