@@ -1,0 +1,18 @@
+# Project-Specific
+
+
+# C9.io
+.hgignore
+node_modules
+.c9
+.DS_Store
+Thumbs.db
+
+# Python
+*.py[cod]
+.installed.cfg
+__pycache__
+pip-log.txt
+.coverage
+.tox
+nosetests.xml

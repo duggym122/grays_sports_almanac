@@ -1,0 +1,10 @@
+###### Requirements without Version Specifiers ######
+#
+coveralls # Needed for coveralls.io integration
+nose # Nose testing library
+#
+
+###### Requirements with Version Specifiers ######
+#
+coverage ~= 4.2 # Needed for coverage statistics
+#

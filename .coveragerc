@@ -1,0 +1,14 @@
+[run]
+source = grays_sports_almanac
+
+[report]
+omit = 
+  */migrations/*
+  *.py[cod]
+  .installed.cfg
+  __pycache__
+  pip-log.txt
+  .coverage
+  .tox
+  nosetests.xml
+  exchange_service_objects/**
