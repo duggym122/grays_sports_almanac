@@ -30,7 +30,7 @@ TODO
 
 ## Running The Project
 
-Run "python setup.py nosetests to build and test"
+Run "python setup.py nosetests" to build and test
 
 ## GNU Affero General Public License v3.0
 
