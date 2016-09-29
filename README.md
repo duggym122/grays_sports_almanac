@@ -1,15 +1,20 @@
 # Grays Sports Almanac
 
-## Status
-
-| Travis-CI | Coveralls | GetBadges |
-| :-------: | :-------: | :-------: |
-| TODO | TODO |  TODO |
-
 ## Project Information
+
+### Package Information
 |         Package        |                                                                  Description                                                                     | Version |
 | :--------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------: | :-----: |
 | grays\_sports\_almanac | This package provides a database schema for sports data and the machine learning tooling available to use the database to predict future games.  |  v0.0.1 |
+
+### Status
+
+| Travis-CI | Coveralls |
+| :-------: | :-------: |
+| [![Build Status](https://travis-ci.org/duggym122/grays_sports_almanac.svg?branch=master)](https://travis-ci.org/duggym122/grays_sports_almanac) | [![Coverage Status](https://coveralls.io/repos/github/duggym122/grays_sports_almanac/badge.svg?branch=master)](https://coveralls.io/github/duggym122/grays_sports_almanac?branch=master) |
+
+### Issue Tracking
+[JIRA]
 
 ## Roadmap
 * Generic sports database including the following entities:
