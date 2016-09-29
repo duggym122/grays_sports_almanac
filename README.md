@@ -29,6 +29,10 @@
 
 **NOTE: This project is still in very early development, so it is subject to some very drastic, and potentially backwards-incompatible changes during the process.**
 
+## Tools
+
+Specific required tools have not yet been determined. Once set up, they will be described here.
+
 ## Installation
 
 TODO
