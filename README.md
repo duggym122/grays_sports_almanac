@@ -23,7 +23,13 @@
   * Game
   * Championship
 * Sport-Specific Predictors
-  * TBD
+  * Algorithms To Test Out:
+    * k-Nearest Neighbour (kNN)
+    * Learning Vector Quantization (LVQ)
+    * Self-Organizing Map (SOM)
+    * Locally Weighted Learning (LWL)
+    * Apriori
+    * Eclat
 * Sport data API integration
   * TBD
 
@@ -34,9 +40,13 @@
 ### Psycopg
 This is the recommended postgres library for Python. Install using the command ``pip install psycopg2``
 
+### TensorFlow
+This is the selected machine learning library
+
 ## Installation
 
-TODO
+### TensorFlow
+Follow the [https://www.tensorflow.org/versions/r0.11/get_started/os_setup.html#pip-installation instructions online.]
 
 ## Running The Project
 
