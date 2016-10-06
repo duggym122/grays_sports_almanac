@@ -18,3 +18,4 @@ pip-log.txt
 nosetests.xml
 .pgpass
 *.pyc
+passfile.py
