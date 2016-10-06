@@ -1,4 +1,4 @@
-from grays_sports_almanac import grays_hockey_database
+from grays_sports_almanac import grays_almanac_database
 import psycopg2
 
 def test_database_existence():
