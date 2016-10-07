@@ -9,7 +9,7 @@ config = {
     'url': 'github.com/duggym122/grays_sports_almanac',
     'download_url': 'https://github.com/duggym122/grays_sports_almanac/archive/v0.0.1.zip',
     'version': '0.0.1',
-    'install_requires': ['nose','psycopg2~=2.6.2'],
+    'install_requires': ['nose'],
     'packages': ['grays_sports_almanac'],
     'scripts': [],
     'name': 'grays_sports_almanac'
