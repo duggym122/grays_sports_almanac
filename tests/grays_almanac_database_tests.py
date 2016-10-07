@@ -41,7 +41,8 @@ class basic_database_tests:
             raised = True
         
         assert_false(raised)
-    
+
+    '''    
     def test_weather_table_existence(self):
         raised = False
         
@@ -51,7 +52,7 @@ class basic_database_tests:
             raised = True
         
         assert_false(raised)
-        
+    '''        
  
     @classmethod
     def teardown_class(cls):
