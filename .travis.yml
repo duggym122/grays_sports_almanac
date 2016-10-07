@@ -8,7 +8,9 @@ install:
  - pip install -r requirements.txt
 
 # Build with unit tests and coverage
-script: coverage run setup.py nosetests
+script: 
+ - python create_db.py
+ - coverage run setup.py nosetests
 
 # safelist
 branches:
