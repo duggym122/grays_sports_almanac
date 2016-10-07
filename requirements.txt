@@ -7,6 +7,6 @@ nose # Nose testing library
 ###### Requirements with Version Specifiers ######
 #
 coverage ~= 4.2 # Needed for coverage statistics
-# Note: The below TensorFlow URL is for 64 bit Ubuntu/Linux, using CPU only, supporting python 2.7 only
-https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.11.0rc0-cp27-none-linux_x86_64.whl
+# Note: The below TensorFlow URL is for 64 bit Ubuntu/Linux, using CPU only, supporting python 2.7 only and is in the setup.py
+# https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.11.0rc0-cp27-none-linux_x86_64.whl
 #
