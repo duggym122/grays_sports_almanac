@@ -25,9 +25,15 @@ except:
 con = connect(user='postgres', port = '5432', database = newdb)
 cur = con.cursor()
 
-cur.execute("CREATE SCHEMA IF NOT EXISTS sport_schema")
+new_schema = "sport_schema"
+try:
+    cur.execute("CREATE SCHEMA IF NOT EXISTS " + new_schema)
+except:
+    print "I encountered an exception trying to create the schema " + new_schema
 
-cur.execute("CREATE TABLE IF NOT EXISTS sport_schema.game ("
+new_table = "game"
+try:
+    cur.execute("CREATE TABLE IF NOT EXISTS sport_schema."+ new_table +" ("
             "league_abbrev          VARCHAR (5)         NOT NULL,"
             "season                 CHAR (8)            NOT NULL,"
             "sport                  VARCHAR (35)        NOT NULL,"
@@ -46,8 +52,12 @@ cur.execute("CREATE TABLE IF NOT EXISTS sport_schema.game ("
             "post_season_game       BOOLEAN             NOT NULL,"
             "championship_game      BOOLEAN             NOT NULL"
             ");")
+except:
+    print "I encountered an exception trying to create the table " + new_table
 
-cur.execute("CREATE TABLE IF NOT EXISTS sport_schema.team ("
+new_table = "team"
+try:
+    cur.execute("CREATE TABLE IF NOT EXISTS sport_schema."+ new_table +" ("
             "league_abbrev                      VARCHAR (5)         NOT NULL,"
             "season                             CHAR (8)            NOT NULL,"
             "sport                              VARCHAR (35)        NOT NULL,"
@@ -68,6 +78,8 @@ cur.execute("CREATE TABLE IF NOT EXISTS sport_schema.team ("
             "home_venue_indoors                 BOOLEAN             NOT NULL,"
             "starters_out                       INT"
             ");")
-    
+except:
+    print "I encountered an exception trying to create the table " + new_table
+
 cur.close()
 con.close()
