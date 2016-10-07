@@ -9,7 +9,7 @@ con = None
 
 def setup_module(module):
     print ("\nSetup database tests by connecting to the database") # this is to get a newline after the dots
-    module.con = connect(user='ubuntu', port = '5432', database = "grays_almanac")
+    module.con = connect(user='postgres', port = '5432', database = "grays_almanac")
  
 def teardown_module(module):
     print ("Tear down database tests by disconnecting from the database")

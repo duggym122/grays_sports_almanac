@@ -13,16 +13,16 @@ cur = None
 # Create the database grays_almanac
 try:
     # Attempt to connect to the database
-    con = connect(user='ubuntu', port = '5432', database = newdb)
+    con = connect(user='postgres', port = '5432', database = newdb)
 except:
     # If the database cannot be connected to, make it
     print "I didn't find the database " + newdb + " so I'm going to create it."
-    con = connect(user='ubuntu', port = '5432')
+    con = connect(user='postgres', port = '5432')
     con.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT)
     cur = con.cursor()
     cur.execute('CREATE DATABASE ' + newdb)
 
-con = connect(user='ubuntu', port = '5432', database = newdb)
+con = connect(user='postgres', port = '5432', database = newdb)
 cur = con.cursor()
 
 cur.execute("CREATE SCHEMA IF NOT EXISTS sport_schema")
