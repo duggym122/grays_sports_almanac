@@ -27,7 +27,7 @@ cur = con.cursor()
 
 new_schema = "sport_schema"
 try:
-    cur.execute("CREATE SCHEMA IF NOT EXISTS " + new_schema)
+    cur.execute("CREATE SCHEMA IF NOT EXISTS " + new_schema + " AUTHORIZATION postgres;")
 except:
     print "I encountered an exception trying to create the schema " + new_schema
 
