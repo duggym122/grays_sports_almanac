@@ -29,7 +29,8 @@ new_schema = "sport_schema"
 try:
     cur.execute("CREATE SCHEMA IF NOT EXISTS " + new_schema + " AUTHORIZATION postgres;")
 except:
-    print "I encountered an exception trying to create the schema " + new_schema
+    print "I encountered an exception trying to create the schema " + new_schema + ": ", sys.exc_info()[0]
+
 
 new_table = "game"
 try:
@@ -53,7 +54,7 @@ try:
             "championship_game      BOOLEAN             NOT NULL"
             ");")
 except:
-    print "I encountered an exception trying to create the table " + new_table
+    print "I encountered an exception trying to create the table " + new_table + ": ", sys.exc_info()[0]
 
 new_table = "team"
 try:
@@ -79,7 +80,7 @@ try:
             "starters_out                       INT"
             ");")
 except:
-    print "I encountered an exception trying to create the table " + new_table
+    print "I encountered an exception trying to create the table " + new_table + ": ", sys.exc_info()[0]
 
 cur.close()
 con.close()
